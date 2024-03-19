@@ -1,0 +1,64 @@
+* {
+  color: white;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 30px;
+}
+h1 {
+  font-family: "Trocchi", serif;
+  font-size: 60px;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+  text-transform: uppercase;
+  color: white;
+  margin: 0;
+}
+
+p {
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.full-height {
+  border: 1px solid black;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-size: 20px;
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  align-items: center;
+  height: calc(100vh - 60px);
+  width: calc(100% - 60px);
+}
+
+div {
+  font-size: 50px;
+}
+
+div > div {
+  display: flex;
+  position: relative;
+  align-items: center;
+  width: 50%;
+  background-color: rgba(22, 95, 99, 0.4);
+  padding: 20px;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+  margin-top: 300px;
+}
+
+.background {
+  background-image: url("./chuck.png");
+}
+
+@media (max-width: 800px) {
+  .background {
+    background-color: black;
+    background-image: none;
+  }
+}
